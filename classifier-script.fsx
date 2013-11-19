@@ -79,9 +79,7 @@ let sampleSetRaw = File.ReadAllLines(sampleSetCsv);
 
 let inputCsv = @"C:\Users\roros_000\Dropbox\Projects\GitHub\digit-classifier\validationsample.csv"
 let inputRaw = File.ReadAllLines(inputCsv);
- 
-// [ YOUR CODE GOES HERE! ]
- 
+
  
 // 2. EXTRACTING COLUMNS
  
@@ -106,8 +104,9 @@ let csvToSplit = "1,2,3,4,5"
 let splitResult = csvToSplit.Split(',')
  
  
-// [ YOUR CODE GOES HERE! ]
- 
+let sampleSetColumns = Array.map (fun(s:string) -> s.Split(',')) sampleSetRaw;
+
+let inputColumns = Array.map (fun(s:string) -> s.Split(',')) inputRaw; 
  
 // 3. CLEANING UP HEADERS
  
