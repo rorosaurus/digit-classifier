@@ -139,7 +139,8 @@ let castedInt = (int)"42"
 let convertedInt = Convert.ToInt32("42")
  
  
-// [ YOUR CODE GOES HERE! ]
+let convertedSampleSet = Array.map( fun (sa:string[]) -> Array.map(fun (s:string) -> (int)s) sa) sampleSetColumnsNoHead
+let convertedInput = Array.map( fun (sa:string[]) -> Array.map(fun (s:string) -> (int)s) sa) inputColumnsNoHead
  
  
 // 5. CONVERTING ARRAYS TO RECORDS
