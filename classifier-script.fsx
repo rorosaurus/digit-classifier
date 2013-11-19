@@ -123,9 +123,8 @@ let twoToFive = someNumbers.[ 1 .. 4 ] // grab a slice
 let upToThree = someNumbers.[ .. 2 ] 
 // </F# QUICK-STARTER> 
  
-
-// [ YOUR CODE GOES HERE! ]
- 
+let sampleSetColumnsNoHead = sampleSetColumns.[1 .. sampleSetColumns.Length-1]
+let inputColumnsNoHead = inputColumns.[1 .. inputColumns.Length-1]
  
 // 4. CONVERTING FROM STRINGS TO INTS
  
